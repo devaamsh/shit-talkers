@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shit talkers website</title>
+    <style>
+        body{
+    background-image: url(./Screenshot\ 2024-01-07\ 112339.png);
+    background-repeat: repeat;
+    background-size: 300px;
+    position: relative;
+    height: 700px;
+    width: 1250px;
+}
+
+.one{
+    position: absolute;
+            height: 350px;
+            width: 350px;
+            background-color: rgb(50, 50, 50);
+            top:200px;
+            left: 430px;
+            border-radius: 10px;
+}
+h1{
+    color:  rgb(158, 141, 46); 
+    font-size: 45px;
+}
+button{
+    position: absolute;
+    height: 45px;
+    width: 200px;
+    bottom: 160px;
+    left:490px;
+    font-size: 15px;
+}
+@media(max-width:767px){
+    body{
+        background-image: url(./Screenshot\ 2024-01-07\ 112339.png);
+        background-repeat: repeat;
+        background-size: 163px;
+        position: relative;
+        height: auto;
+        width: auto;
+    }
+    .one{
+        position: absolute;
+                height: 350px;
+                width: 350px;
+                background-color: rgb(50, 50, 50);
+                top:200px;
+                left:100px;
+                border-radius: 10px;
+    }
+    h1{
+        color: rgb(158, 141, 46);
+        align-items: center;
+        justify-content: center;
+        font-size: 45px;
+    }
+    button{
+        position: absolute;
+        color:black;
+        height:45px;
+        width: 125px;
+        top: 500px;
+        left:175px;
+        font-size: 15px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="one">
+        <h1 left="15px">WELCOME</h1>
+        <h1>TO</h1>
+        <h1>SHIT TALKERS WEBSITE</h1>
+       
+    </div>
+     <button><b>CLICK TO START</b></button>
+     <script>
+        document.querySelector("button").addEventListener("click",handleclick);
+function handleclick(){
+    alert("Devaamsh Welcomes you!!");
+    var a=prompt("Give Me Your Name");
+    var b=prompt("Give Me a Name from our shit talkers!!");
+    var i,j,k;
+    a=a.toUpperCase();
+    b=b.toUpperCase();
+    var talkers=["DEVA","DEVAAMSH","DEVAMSH","AKKI","AKSHATHA KATHYAYANI","LEELA","LEELA MEGHANA","VAISHU","VAISHNAVI","HARI","HARINATH","MONVITA","NEEHAR","SAI KIRAN","KIRAN","SAI","SHREYA","VAIBHAVI"];
+    for(i=0;i<18;i++){
+        if(a===talkers[i]){
+            break;
+        }
+    }
+    for(j=0;j<18;j++){
+        if(b===talkers[j]){
+            break;
+        }
+    }
+    if(i===j){
+        alert("Nee peru nuvve raskokandi bot gallu!!!!");
+    }
+    else if(((i===0||i===1||i===2)&&(j===7||j===8||j===9||j===10||j===12||j===13||j===14||j===15||j===17))||((j===0||j===1||j===2)&&(i===7||i===8||i===9||i===10||i===12||i===13||i===14||i===15||i===17))){
+        alert("we are good friends!!!");
+    }
+    else{
+        alert(a+" and "+b+" are enemies");
+        alert("ellipondi bot mokallu!!!!");
+    }
+}
+     </script>
+</body>
+</html>
